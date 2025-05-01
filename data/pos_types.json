@@ -1,0 +1,6 @@
+{
+    "pos_types": [
+        "CC", "CD", "DT", "EX", "IN", "JJ", "JJR", "JJS", "MD", "NN", "NNS", "RB", "RBR",
+        "RBS", "RP", "UH", "VBD", "VB", "VBG", "VBN", "VBP", "VBP", "WDT", "WP", "WRB"
+    ]
+}

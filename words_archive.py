@@ -1,58 +1,33 @@
 '''Page for managing words'''
 
-import json
-import nltk
 import streamlit as st
-from pathlib import Path
+from utils.utils import (
+    manage_word,
+    get_file,
+    write_to_file
+)
 
-words_file_name = 'words.json'
-words_file = Path(words_file_name)
-words_json = json.load(words_file)
+words_file_name = 'data/words.json'
+words = get_file(words_file_name)
 
-#-------------------------------------------
-def get_word_index(word: str) -> int:
-    """
-    Get word's index in words file.
+st.markdown('# Words Archive 📘')
 
-    Inputs:
-    --------
-    word (str): 
-        A word.
+def on_submit():    
+    new_words = manage_word(st.session_state.action, st.session_state.word, words)
+    write_to_file(words_file_name, new_words)
 
-    Returns:
-    --------
-    int: 
-        Index of word in words file, -1 otherwise.
-    """
-    words = words_json['words']
-    for i in range(len(words_json['words'])):
-        w = words[i]
-        if w['word'] == word:
-            return i
-    return -1
+# ---Side bar
+# Word Input
+col1, col2 = st.columns(2)
+st.sidebar.markdown('# Inputs')
+st.sidebar.text_input('Word', key='word')
+st.sidebar.selectbox('Action', ['Add', 'Remove'], key='action')
+st.sidebar.button('Submit', on_click=on_submit)
 
-#-------------------------------------------
-def manage_word(action: str, word: str) -> dict:
-    """
-    Manage word with action input. Writes to words file.
+# Main
+# Word list
+col1, col2, col3 = st.columns(3)
+words_count = len(words['words'])
 
-    Inputs:
-    --------
-    action(str):
-        An action for a word.
-    word (str): 
-        A word.
-    """    
-    word_index = get_word_index(word)
-    if action == 'Add':
-        # Word not found in words file
-        if word_index == -1:
-            words_json['words'].append({
-                'word': word,
-                'pos_tag': nltk.pos_tag(nltk.word_tokenize(word))
-            })
-    
-    if action == 'Delete':
-        # Word found in words file
-        if word_index >= 0:
-            words_json['words'].pop(word_index)
+for word in words['words']:
+    st.write(word)
