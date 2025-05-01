@@ -1,3 +1,5 @@
+'''Page for name generation'''
+
 import streamlit as st
 import nltk
 import random
@@ -10,27 +12,35 @@ words_file_name = 'data/words.json'
 words = get_file(words_file_name)['words']
 
 def on_submit():
+    """
+    Callback function when user submits name generation inputs.
+    """
     names = set()
     first_word_candidates = []
     second_word_candidates = []
     first_pos = set(st.session_state.first_pos)
     second_pos = set(st.session_state.second_pos)
 
+    # Loop through words to find candidates with input POS
     for word in words:
         if word['pos_tag'] in first_pos:
             first_word_candidates.append(word)
         if word['pos_tag'] in second_pos:
             second_word_candidates.append(word)
 
+    # Generate names
     for _ in range(st.session_state.names_count):
         found = False
         while not found:
             first_word = random.choice(first_word_candidates)
             second_word = random.choice(second_word_candidates)
             name = f'{first_word['word']}{second_word['word']}'
+
+            # Check if name has already been generated
             if name not in names:
                 found = True
         names.add(name)
+        
     st.session_state.names = names
 
 st.markdown('# Name Generator 🎰')
@@ -42,7 +52,6 @@ st.sidebar.multiselect('First POS', pos_types, key='first_pos')
 st.sidebar.multiselect('Second POS', pos_types, key='second_pos')
 st.sidebar.number_input('Number of outputs', min_value=1, max_value=5, key='names_count')
 st.sidebar.button('Submit', on_click=on_submit)
-
 
 # ---Main
 # Names output

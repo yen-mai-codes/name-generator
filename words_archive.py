@@ -13,7 +13,13 @@ words = get_file(words_file_name)
 st.markdown('# Words Archive 📘')
 
 def on_submit():    
+    """
+    Callback function when user submits word inputs.
+    """
+    # Change words json based on user's input action and word
     new_words = manage_word(st.session_state.action, st.session_state.word, words)
+
+    # Write to words file the new words json
     write_to_file(words_file_name, new_words)
 
 # ---Side bar
