@@ -11,6 +11,7 @@ corresponding to a particular part of speech, based on both its definition and i
 A simplified form of this is commonly taught to school-age children, in the identification 
 of words as nouns, verbs, adjectives, adverbs, etc.
 
-The complete POS list can be found on the Penn Treebank Project.
+The complete POS list can be found on the Penn Treebank Project:
+https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
 """)
 
