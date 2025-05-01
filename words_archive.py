@@ -1,6 +1,7 @@
 '''Page for managing words'''
 
 import streamlit as st
+import pandas as pd
 from utils.utils import (
     manage_word,
     get_file,
@@ -32,8 +33,5 @@ st.sidebar.button('Submit', on_click=on_submit)
 
 # Main
 # Word list
-col1, col2, col3 = st.columns(3)
-words_count = len(words['words'])
-
-for word in words['words']:
-    st.write(word)
+words_df = pd.DataFrame.from_records(words['words']).sort_values(by=['word', 'pos_tag'])
+st.table(words_df)
