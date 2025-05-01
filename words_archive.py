@@ -33,5 +33,5 @@ st.sidebar.button('Submit', on_click=on_submit)
 
 # Main
 # Word list
-words_df = pd.DataFrame.from_records(words['words']).sort_values(by=['word', 'pos_tag'])
+words_df = pd.DataFrame.from_records(words['words'], index='word').sort_values(by=['word', 'pos_tag'])
 st.table(words_df)
