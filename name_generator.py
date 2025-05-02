@@ -27,10 +27,13 @@ def on_submit():
 
     # Loop through words to find candidates with input POS
     for word in words:
-        if word['pos_tag'] in first_pos:
-            first_word_candidates.append(word)
-        if word['pos_tag'] in second_pos:
-            second_word_candidates.append(word)
+        for p in first_pos:
+            if p in word['pos_tag']:
+                first_word_candidates.append(word)
+        for p in first_pos:
+            if word['pos_tag'] in second_pos:
+                if p in word['pos_tag']:
+                    second_word_candidates.append(word)
 
     # Generate names
     for _ in range(st.session_state.names_count):
@@ -38,6 +41,8 @@ def on_submit():
         while not found:
             first_word = random.choice(first_word_candidates)
             second_word = random.choice(second_word_candidates)
+            if first_word == second_word:
+                continue
             name = f'{first_word['word']}{second_word['word']}'
 
             # Check if name has already been generated

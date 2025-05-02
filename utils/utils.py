@@ -34,7 +34,7 @@ def get_word_index(word: str, words_json: dict) -> int:
     return -1
 
 #-------------------------------------------
-def manage_word(action: str, word: str, words_json: dict) -> dict:
+def manage_word(action: str, word: str, pos: list, words_json: dict) -> dict:
     """
     Manage word with action input. Writes to words file.
 
@@ -51,7 +51,7 @@ def manage_word(action: str, word: str, words_json: dict) -> dict:
         if word_index == -1:
             words_json['words'].append({
                 'word': word,
-                'pos_tag': nltk.pos_tag(nltk.word_tokenize(word))[0][1]
+                'pos_tag': pos
             })
     
     if action == 'Remove':

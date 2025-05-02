@@ -10,3 +10,4 @@ TODOs:
     {pos_tag}:
         {words_list}
 }
+- Editable word & name dataframe
