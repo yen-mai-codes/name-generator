@@ -11,3 +11,6 @@ TODOs:
         {words_list}
 }
 - Editable word & name dataframe
+- Add phrases/idioms option. Examples:
+    - Point of view
+    - Bite the bullet
