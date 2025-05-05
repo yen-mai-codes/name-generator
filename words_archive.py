@@ -37,8 +37,8 @@ with col1:
     st.multiselect('POS', pos_types, key='pos', label_visibility='collapsed', placeholder='Choose POS tags')
 
 with col2:
-    st.button('Add', on_click=on_submit, args=('Add',), icon='💏', use_container_width=True)
-    st.button('Remove', on_click=on_submit, args=('Remove',), icon="🤮", use_container_width=True)
+    st.button('Add', on_click=on_submit, args=('Add 💏',), use_container_width=True)
+    st.button('Remove', on_click=on_submit, args=('Remove 🤮',), use_container_width=True)
 
 # Main
 # Word list
