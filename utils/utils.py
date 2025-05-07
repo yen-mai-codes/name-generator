@@ -38,3 +38,29 @@ def manage_word(action: str, word: str, word_types: list, data: dict) -> dict:
             words_list.remove(word)
 
     return data
+    
+#-------------------------------------------
+def manage_idea_component(action: str, component: str, component_type: str, data: dict) -> dict:
+    """
+    Add or remove idea component from json.
+
+    Inputs:
+    --------
+    action(str):
+        An action for a component.
+    component (str): 
+        A component.
+    type (str):
+        Component's type.
+    data (dict):
+        Json of component.
+    """    
+    components_list = data[component_type]
+    if action == 'Add' and component not in components_list:
+        components_list.append(component)
+    
+    if action == 'Remove' and component in components_list:
+        components_list.remove(component)
+
+    return data
+    

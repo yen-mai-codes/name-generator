@@ -1,5 +1,51 @@
 {
-    "mediums": ["clay", "woodblock print", "canvas", "printer paper", "notebook", "book", "wood", "3d print", "origami", "lego"],
-    "finishes": ["no", "oil paint", "acrylic", "spray acrylic"],
-    "themes": ["idol", "internet", "figurine"]
+    "medium": [
+        "clay",
+        "woodblock print",
+        "canvas",
+        "printer paper",
+        "notebook",
+        "book",
+        "wood",
+        "3d print",
+        "origami",
+        "lego",
+        "game",
+        "metal",
+        "digital"
+    ],
+    "finish": [
+        "no",
+        "oil paint",
+        "acrylic",
+        "spray acrylic"
+    ],
+    "theme": [
+        "idol",
+        "internet",
+        "figurine",
+        "kpop",
+        "sexualization",
+        "chair",
+        "meme",
+        "operating systems",
+        "pop music",
+        "cincinnati",
+        "miku",
+        "gacha",
+        "yuri",
+        "Edo woodblock"
+    ],
+    "style": [
+        "florentine medieval",
+        "impressionism",
+        "medieval",
+        "late 80s/90s pc98",
+        "pixel art"
+    ],
+    "size": [
+        "mini",
+        "medium",
+        "big"
+    ]
 }
