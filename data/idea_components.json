@@ -1,0 +1,5 @@
+{
+    "mediums": ["clay", "woodblock print", "canvas", "printer paper", "notebook", "book", "wood", "3d print", "origami", "lego"],
+    "finishes": ["no", "oil paint", "acrylic", "spray acrylic"],
+    "themes": ["idol", "internet", "figurine"]
+}
