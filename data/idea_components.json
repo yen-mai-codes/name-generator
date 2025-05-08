@@ -1,4 +1,11 @@
 {
+    "genre": [
+        "portrait",
+        "everyday",
+        "landscape",
+        "still life",
+        "history"
+    ],
     "theme": [
         "idol",
         "internet",
@@ -25,7 +32,20 @@
         "chiikawa",
         "evangelion",
         "computers",
-        "romance"
+        "romance",
+        "phone",
+        "tik tok",
+        "being a good child",
+        "being a good student"
+    ],
+    "finish": [
+        "no",
+        "oil paint",
+        "acrylic",
+        "spray acrylic",
+        "graphite",
+        "charcoal",
+        "pen"
     ],
     "medium": [
         "clay",
@@ -48,15 +68,6 @@
         "photography",
         "video"
     ],
-    "finish": [
-        "no",
-        "oil paint",
-        "acrylic",
-        "spray acrylic",
-        "graphite",
-        "charcoal",
-        "pen"
-    ],
     "style": [
         "impressionism",
         "medieval",
@@ -71,13 +82,6 @@
         "yogurt200",
         "yoshiyuki sadamoto",
         "vietnamese 2000s-2010s textbooks"
-    ],
-    "genre": [
-        "portrait",
-        "everyday",
-        "landscape",
-        "still life",
-        "history"
     ],
     "vibe": [
         "gore",

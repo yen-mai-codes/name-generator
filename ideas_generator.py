@@ -11,7 +11,7 @@ from utils.utils import (
 idea_components_file = 'data/idea_components.json'
 idea_components = get_file(idea_components_file)
 component_types = [x for x in idea_components]
-sorted_parameters = ['theme', 'medium', 'finish', 'style', 'genre', 'vibe', 'size']
+sorted_parameters = ['genre', 'theme', 'finish', 'medium', 'style', 'vibe', 'size']
 
 def on_submit_component(action: str):
     """Callback function for add/remove components"""
