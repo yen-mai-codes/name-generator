@@ -54,7 +54,8 @@
         "doraemon",
         "chiikawa",
         "evangelion",
-        "computers"
+        "computers",
+        "romance"
     ],
     "style": [
         "impressionism",
@@ -71,6 +72,23 @@
         "yoshiyuki sadamoto",
         "vietnamese 2000s-2010s textbooks"
     ],
+    "genre": [
+        "portrait",
+        "everyday",
+        "landscape",
+        "still life",
+        "history"
+    ],
+    "vibe": [
+        "gore",
+        "horror",
+        "thriller",
+        "action",
+        "high-art",
+        "drama",
+        "comedy",
+        "adventure"
+    ]
     "size": [
         "mini",
         "medium",
