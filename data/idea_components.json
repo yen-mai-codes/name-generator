@@ -42,7 +42,15 @@
         "office",
         "life",
         "AI",
-        "robots"
+        "robots",
+        "porn",
+        "hentai",
+        "vocal synths",
+        "pop culture",
+        "japanese music",
+        "rei adachi",
+        "visual novel",
+        "dating sim"
     ],
     "finish": [
         "no",
@@ -72,7 +80,9 @@
         "sticker",
         "zine",
         "photography",
-        "video"
+        "video",
+        "paper",
+        "woodblock"
     ],
     "style": [
         "impressionism",
@@ -87,7 +97,8 @@
         "tony taka",
         "yogurt200",
         "yoshiyuki sadamoto",
-        "vietnamese 2000s-2010s textbooks"
+        "vietnamese 2000s-2010s textbooks",
+        "pc98"
     ],
     "vibe": [
         "gore",
@@ -97,11 +108,14 @@
         "high-art",
         "drama",
         "comedy",
-        "adventure"
+        "adventure",
+        "playful",
+        "serious"
     ],
     "size": [
         "mini",
         "medium",
-        "big"
+        "big",
+        "small"
     ]
 }

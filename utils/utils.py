@@ -63,4 +63,3 @@ def manage_idea_component(action: str, component: str, component_type: str, data
         components_list.remove(component)
 
     return data
-    
