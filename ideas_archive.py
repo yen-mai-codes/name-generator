@@ -49,8 +49,8 @@ st.markdown('# Ideas Archive')
 for idea in ideas['ideas']:
     parameters = idea['parameters']
     st.write('---------------------------------------------')
-    st.write(idea['idea'])
+    st.text(idea['idea'])
     for parameter in parameters:
         value = parameters[parameter]
         if value:
-            st.markdown(f'{parameter.capitalize()}: {', '.join(value)}')
+            st.text(f'{parameter.capitalize()}: {', '.join(value)}')
