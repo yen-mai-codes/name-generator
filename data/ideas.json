@@ -1,0 +1,79 @@
+{
+    "ideas": [
+        {
+            "idea": "1/ Grab a pornographic video from HiAnime or Pornhub or similar porn sites\n2/ Extract key frames, redraw keyframes (with color, make it obvious it was drawn traditionally)\n3/ Recreate the video with the drawn keyframes (with audio)\n4/ Post on some porn site",
+            "parameters": {
+                "genre": [],
+                "theme": [
+                    "internet",
+                    "porn",
+                    "hentai",
+                    "sexualization"
+                ],
+                "finish": [
+                    "acrylic"
+                ],
+                "medium": [
+                    "paper"
+                ],
+                "style": [],
+                "vibe": [
+                    "playful",
+                    "serious"
+                ],
+                "size": [
+                    "small"
+                ]
+            }
+        },
+        {
+            "idea": "The stress - animation with miku. The original choreography is actually very \"tik tok dance\"!\n\n- The customers are currently popular vocal synths\n- The 'ghost' is Teto",
+            "parameters": {
+                "theme": [
+                    "miku",
+                    "vocal synths",
+                    "pop culture",
+                    "japanese music"
+                ],
+                "medium": [
+                    "digital"
+                ],
+                "style": [
+                    "pc98"
+                ],
+                "vibe": [
+                    "playful"
+                ]
+            }
+        },
+        {
+            "idea": "Rei Adachi dating sim\n\n- all the words are trained off of lyrics from vocal synth songs\n- NLTK\n- She will first not be able to speak, then when you installs a program in her, she starts speaking\n- Starts out with a black screen.. then CG.. then scientist monologuing about how he has worked hard on her. Very comprehensible English until Rei Adachi starts speaking.\n- Sometimes, a choice would pop up? ‘This is a failed experiment.’\n    - Would then result in violence? The scientist dumping her into a room full of failed Adachis\n    - Sound design",
+            "parameters": {
+                "theme": [
+                    "rei adachi",
+                    "vocal synths",
+                    "visual novel",
+                    "dating sim"
+                ],
+                "medium": [
+                    "digital",
+                    "game"
+                ],
+                "style": [
+                    "pc98"
+                ],
+                "vibe": [
+                    "playful"
+                ]
+            }
+        },
+        {
+            "idea": "36 views of [x]\n- Based on Hokusai’s series of 36 views of Mt Fuji\n- The subject *must* be different, with immediate emotion evocation, or delayed after knowing what it is referencing",
+            "parameters": {
+                "medium": [
+                    "woodblock"
+                ]
+            }
+        }
+    ]
+}
